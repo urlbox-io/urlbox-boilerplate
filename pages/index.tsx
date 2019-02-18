@@ -1,8 +1,9 @@
-import * as React from 'react'
-import {Home} from '../src/components/Home'
-import {Layout} from '../src/components/Layout'
+import * as React from "react";
+import { Home } from "../src/components/Home";
+import { Layout } from "../src/components/Layout";
 
-export default props =>
+export default props => (
   <Layout>
-    <Home/>
+    <Home />
   </Layout>
+);
