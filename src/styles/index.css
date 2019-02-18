@@ -1,0 +1,11 @@
+@tailwind preflight;
+@tailwind utilities;
+body {
+  @apply bg-grey-lightest font-sans font-normal text-grey-dark;
+}
+a {
+  @apply text-grey-darkest no-underline font-bold;
+}
+a:hover {
+  @apply text-purple-dark;
+}

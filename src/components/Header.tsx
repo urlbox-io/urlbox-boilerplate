@@ -1,10 +1,9 @@
-import * as React from 'react'
-import {Nav} from './Nav'
+import * as React from "react";
+import { Nav } from "./Nav";
 
-export const Header: React.FunctionComponent = props =>
-  <div>
-    <h2>
-      header
-    </h2>
-    <Nav/>
-  </div>
+export const Header: React.FunctionComponent = props => (
+  <header>
+    <h3>Header Component</h3>
+    <Nav />
+  </header>
+);

@@ -1,31 +1,25 @@
-import * as React from 'react'
-import Link from 'next/link'
+import * as React from "react";
+import Link from "next/link";
 
-export const Nav: React.FunctionComponent = props =>
+export const Nav: React.FunctionComponent = props => (
   <nav>
-    <h4>
-      samples
-    </h4>
-    <ul>
+    <h4>Nav Component:</h4>
+    <ul className="list-reset inline-block">
       <li>
         <Link href="/">
           <a>Home</a>
         </Link>
       </li>
       <li>
-        <Link href="/SSR">
-          <a>SSR</a>
+        <Link href="/somepage">
+          <a>Somepage</a>
         </Link>
       </li>
       <li>
-        <Link href="/StyledJsx">
-          <a>Styled Jsx</a>
-        </Link>
-      </li>
-      <li>
-        <Link href="/ModuleCss">
-          <a>Module CSS</a>
+        <Link href="/someotherpage">
+          <a>Someotherpage</a>
         </Link>
       </li>
     </ul>
   </nav>
+);
