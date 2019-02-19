@@ -1,0 +1,78 @@
+{
+  "name": "typescript-mongoose",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Vlado Tešanović",
+  "engines": {
+    "node": "8.9.1",
+    "npm": "5.2.0"
+  },
+  "repository": {
+    "url": "https://github.com/vladotesanovic/typescript-mongoose-express.git",
+    "type": "git"
+  },
+  "scripts": {
+    "start": "nodemon",
+    "tsc:w": "tsc -w",
+    "lint": "tslint src/**/*.ts --fix",
+    "test": "jest",
+    "build": "tsc -p ./prod.tsconfig.json && ncp './src/assets' './dist/assets'",
+    "test:coverage": "nyc mocha"
+  },
+  "nyc": {
+    "extension": [
+      ".ts"
+    ],
+    "include": [
+      "src/**/*.ts"
+    ],
+    "require": [
+      "ts-node/register",
+      "source-map-support/register"
+    ],
+    "exclude": [
+      "src/**/*.d.ts",
+      "src/tests/**/*.ts"
+    ],
+    "reporter": [
+      "html"
+    ],
+    "check-coverage": "--lines 50 --per-file",
+    "all": false,
+    "sourceMap": false,
+    "instrument": true
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "debug": "^3.1.0",
+    "express": "^4.16.4",
+    "mongoose": "^4.13.6",
+    "swagger-jsdoc": "^1.9.7",
+    "ts-node-dev": "^1.0.0-pre.32"
+  },
+  "devDependencies": {
+    "@types/body-parser": "1.16.4",
+    "@types/chai": "^4.1.2",
+    "@types/chai-http": "^3.0.3",
+    "@types/dotenv": "^4.0.2",
+    "@types/express": "^4.0.36",
+    "@types/jest": "^24.0.6",
+    "@types/mocha": "^2.2.41",
+    "@types/mongoose": "^4.7.18",
+    "@types/node": "^8.0.7",
+    "@types/swagger-jsdoc": "0.0.1",
+    "dotenv": "^4.0.0",
+    "jest": "^24.1.0",
+    "mongodb-memory-server": "^3.1.1",
+    "ncp": "^2.0.0",
+    "nodemon": "^1.14.11",
+    "nyc": "^11.4.1",
+    "source-map-support": "^0.5.3",
+    "supertest": "^3.4.2",
+    "ts-jest": "^23.10.5",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.11.0",
+    "tslint-config-airbnb": "^5.11.1",
+    "typescript": "^3.1.4"
+  }
+}
