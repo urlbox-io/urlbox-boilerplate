@@ -3,6 +3,6 @@ import { Layout } from "../src/components/Layout";
 
 export default props => (
   <Layout>
-    <div>StyledJsx</div>
+    <h1>Instructions</h1>
   </Layout>
 );

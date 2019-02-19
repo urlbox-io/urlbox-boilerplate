@@ -1,0 +1,7 @@
+{
+  "rules": {
+    "semicolon": [true, "always"],
+    "quotemark": [true, "double", "jsx-double"],
+    "indent": [true, "spaces", 2]
+  }
+}

@@ -4,8 +4,19 @@ body {
   @apply bg-grey-lightest font-sans font-normal text-grey-dark;
 }
 a {
-  @apply text-grey-darkest no-underline font-bold;
+  @apply no-underline font-bold;
 }
-a:hover {
+/* a:visited{
+  @apply 
+} */
+/* a:hover {
   @apply text-purple-dark;
-}
+} */
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply text-purple-light;
+} */
